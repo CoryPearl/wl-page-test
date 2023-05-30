@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W-L Summer Workout</title>
+    <link rel="icon" href="wlcrewlogo.png">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: grey;
+    /* overflow: hidden; */
+}
+#header{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(55, 55, 55);
+    position: sticky;
+    top: 0;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 1%;
+}
+#block{
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  position: absolute;
+}
+#sign-up{
+  text-decoration: none;
+  width: 75px;
+  height: 25px;
+  background-color: lightgrey;
+  text-align: center;
+  padding-top: 5px;
+  border-radius: 10%;
+  position: absolute;
+  left: 97.5%;
+  transform: translateX(-97.5%);
+  top: 25%;
+}
+#heading{
+    font-family: 'Courier New', monospace;
+    background-image: linear-gradient(to right, rgb(29, 49, 92), rgb(62, 69, 85));
+    -webkit-text-stroke: 0.25px white;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3vw;
+}
+#heading {
+    font-size: 50px; /* Default font size */
+  }
+  @media (max-width: 1500px) {
+    #heading {
+      font-size: 37.5px; /* Adjust the value for smaller screens */
+    }
+  }
+  @media (max-width: 1250px) {
+    #heading {
+      font-size: 35px; /* Adjust the value for smaller screens */
+    }
+  }
+  @media (max-width: 1000px) {
+    #heading {
+      font-size: 30px; /* Adjust the value for smaller screens */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #heading {
+      font-size: 25px; /* Adjust the value for smaller screens */
+    }
+  }
+  
+  @media (max-width: 400px) {
+    #heading {
+      font-size: 20px; /* Adjust the value for even smaller screens */
+    }
+  }
+#logo{
+    width: 75px;
+}
+#main{
+    user-select: none;
+    width: 95%;
+    height: 95%;
+    overflow: hidden;
+}
+#refresh{
+    border-radius: 15%;
+    height: 25px;
+    width: 200px;
+    margin-top: 6px;
+}
+#whole{
+    height: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+</style>
+<body>
+    <div id="header">
+        <h1 id="heading">W-L Summer Workout Stats</h1>
+        <img id="logo" src="https://teamlocker.s3.amazonaws.com/uploads/bulk-stores-logos/rSchool/washingtonlibertyhighschool_boyscrew_emb_lights.png" alt="logo">
+        <a id="sign-up" href="https://forms.gle/urDR7sfSR7sR8FJ49 ">Sign Up</a>
+    </div>
+    <div id="whole">
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTy3fxvjN79V-nuoi1wHPd3evNhzvGX9ekrrZpw_omsbO1RouqdqeNwIJ9TDyiBkQTX5ZDChMb8IL1R/pubhtml?gid=830338077&single=true" frameborder="0" id="main"  scrolling="no"></iframe>
+        <!-- <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTy3fxvjN79V-nuoi1wHPd3evNhzvGX9ekrrZpw_omsbO1RouqdqeNwIJ9TDyiBkQTX5ZDChMb8IL1R/pubhtml?gid=0&single=true" frameborder="0" id="main"  scrolling="no"></iframe> -->
+        <!-- <button onclick="refresh()" id="refresh">Refresh For Updated Stats</button> -->
+        <div id="block">
+
+        </div>
+    </div>
+    
+</body>
+</html>
